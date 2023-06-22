@@ -3,25 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ej4;
+package ej6;
 
-import Entidades.Rectangulo;
+import Entidades.Cafetera;
 
 /**
  *
  * @author rebek
  */
-public class Ej4 {
+public class Ej6 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-   
-        Rectangulo r1 = new Rectangulo().crearRectangulo();
-        System.out.println("La superficie del rectangulo es: " + r1.superficie());
-        System.out.println("El perimetro del rectangulo es: "+ r1.perimetro());
-        r1.dibujo();
+        Cafetera c1 = new Cafetera().crearCafetera();
+        c1.llenarCafetera();
+        c1.servirTaza(120);
+        c1.agregarCafe(300);
     }
     
 }

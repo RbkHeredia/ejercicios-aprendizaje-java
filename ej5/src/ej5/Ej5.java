@@ -3,25 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ej4;
+package ej5;
 
-import Entidades.Rectangulo;
+import Entidades.Cuenta;
 
 /**
  *
  * @author rebek
  */
-public class Ej4 {
+public class Ej5 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-   
-        Rectangulo r1 = new Rectangulo().crearRectangulo();
-        System.out.println("La superficie del rectangulo es: " + r1.superficie());
-        System.out.println("El perimetro del rectangulo es: "+ r1.perimetro());
-        r1.dibujo();
+        Cuenta cuentaNueva = new Cuenta().crearCuenta();
+        cuentaNueva.consultarDatos();
+        cuentaNueva.ingresar(500);
+        cuentaNueva.extraccionRapida(50);
+        cuentaNueva.consultarSaldo();
     }
     
 }
