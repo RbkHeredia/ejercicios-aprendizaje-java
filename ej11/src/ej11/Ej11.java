@@ -41,7 +41,7 @@ Ejemplo fecha actual: Date fechaActual = new Date();
         int anioFecha = fecha.get(Calendar.YEAR);
         int anioActual = fechaActual.get(Calendar.YEAR);
         System.out.println(fechaActual.get(Calendar.YEAR));
-        System.out.println(anioActual-anioFecha);
+        System.out.println("La diferencia de años entre la fecha ingresada y el año actual es de: " +(anioActual-anioFecha));
     }
     
 }
