@@ -20,11 +20,7 @@ public class ServicioMatematica {
     }
     
     public int devolverMayor(Matematica m1) {
-        if(m1.getNum1()>m1.getNum2()){
-            return m1.getNum1();
-        } else {
-            return m1.getNum2();
-        }
+        return Math.max(m1.getNum1(), m1.getNum2());
     }
     
     public int calcularPotencia(Matematica m1){
